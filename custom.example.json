@@ -1,0 +1,36 @@
+{
+  "MovieTracker": {
+    "guilds": [
+      "MovieTracker guild IDs"
+    ],
+    "debug": true,
+    "portdothu": {
+      "channels": [],
+      "genres": []
+    },
+    "cinemagia": {
+      "genre": "genre-id",
+      "channels": [
+        "channels",
+        "separated",
+        "by",
+        "comma"
+      ]
+    },
+    "channel": "channel ID",
+    "time": "6:00"
+  },
+  "StatusTracker": {
+    "guilds": [
+      "StatusTracker guild IDs"
+    ],
+    "channel": "StatusTracker channel ID",
+    "refreshInterval": 1,
+    "timeout": 5,
+    "quiet": false,
+    "domains": [
+      "https://google.com",
+      "https://discordapp.com"
+    ]
+  }  
+}

@@ -1,0 +1,8 @@
+{
+  "name": "thimble-bot-custom-directives",
+  "version": "0.1.0",
+  "description": "The custom directives I use for my own instance of Thimble Bot (https://thimblebot.xyz)",
+  "author": "József Sallai @jozsefsallai",
+  "license": "MIT",
+  "private": true
+}
