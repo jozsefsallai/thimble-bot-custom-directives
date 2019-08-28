@@ -32,5 +32,10 @@
       "https://google.com",
       "https://discordapp.com"
     ]
-  }  
+  },
+  "OkunaAPITracker": {
+    "path": "https://github.com/OkunaOrg/okuna-app/tree/master/lib/services",
+    "channel": "channel id",
+    "time": "6:00"
+  }
 }
