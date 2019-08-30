@@ -24,6 +24,10 @@ class SlapCommand extends Command {
   }
 
   runCommand(message, { user }) {
+    if (!user || !user.id) {
+      return message.say(':x: No idea who that is.');
+    }
+
     if (user.id === message.author.id) {
       return message.say('Slapping yourself is not a very healthy thing...');
     }
