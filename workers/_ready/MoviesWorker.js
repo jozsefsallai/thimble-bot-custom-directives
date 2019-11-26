@@ -1,7 +1,7 @@
-const tracker = require('../lib/MovieTracker');
+const tracker = require('../../lib/MovieTracker');
 const schedule = require('node-schedule');
 
-const config = require('../../config');
+const config = require('../../../config');
 
 const getTime = (t) => {
   return {

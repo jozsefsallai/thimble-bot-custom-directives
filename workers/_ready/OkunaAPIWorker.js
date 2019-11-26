@@ -1,4 +1,4 @@
-const config = require('../../config');
+const config = require('../../../config');
 const axios = require('axios');
 const cheerio = require('cheerio');
 
@@ -6,7 +6,7 @@ const path = require('path');
 const fs = require('fs');
 const schedule = require('node-schedule');
 
-const MANIFEST_STORAGE_PATH = path.join(__dirname, '..', 'storage', 'OkunaAPITracker.manifest.json');
+const MANIFEST_STORAGE_PATH = path.join(__dirname, '..', '..', 'storage', 'OkunaAPITracker.manifest.json');
 
 const getHTML = () => {
   return new Promise((resolve, reject) => {

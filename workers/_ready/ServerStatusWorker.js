@@ -1,6 +1,6 @@
-const StatusTracker = require('../lib/StatusTracker');
+const StatusTracker = require('../../lib/StatusTracker');
 
-const config = require('../../config');
+const config = require('../../../config');
 
 const send = (client, result) => {
   if (result) {

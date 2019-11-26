@@ -48,7 +48,7 @@ class SlapCommand extends Command {
 
     const ending = endings[Math.floor(Math.random() * endings.length)];
 
-    return message.say(`:clap: ${message.author.toString()} slapped ${user.toString()}. ${ending}`)
+    return message.say(`:clap: ${message.author.toString()} slapped ${user.toString()}. ${ending}`);
   }
 };
 
