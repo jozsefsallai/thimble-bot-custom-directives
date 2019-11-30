@@ -10,7 +10,12 @@ const Worker = (client, message) => {
         timeZone: config.custom.Sleeptime.timeZone
       });
 
-    const currentHour = new Date(dateString).getHours();
+    const date = new Date(dateString);
+    if ([ 5, 6 ].includes(date.getDay())) {
+      return;
+    }
+
+    const currentHour = date.getHours();
 
     if (currentHour > config.custom.Sleeptime.latestHour ||
         currentHour < config.custom.Sleeptime.earliestHour) {
