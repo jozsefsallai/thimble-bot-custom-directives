@@ -1,8 +1,6 @@
 {
   "MovieTracker": {
-    "guilds": [
-      "MovieTracker guild IDs"
-    ],
+    "guild": "MovieTracker guild ID",
     "debug": true,
     "portdothu": {
       "channels": [],
@@ -21,9 +19,7 @@
     "time": "6:00"
   },
   "StatusTracker": {
-    "guilds": [
-      "StatusTracker guild IDs"
-    ],
+    "guild": "StatusTracker guild ID",
     "channel": "StatusTracker channel ID",
     "refreshInterval": 1,
     "timeout": 5,
@@ -32,10 +28,5 @@
       "https://google.com",
       "https://discordapp.com"
     ]
-  },
-  "OkunaAPITracker": {
-    "path": "https://github.com/OkunaOrg/okuna-app/tree/master/lib/services",
-    "channel": "channel id",
-    "time": "6:00"
   }
 }

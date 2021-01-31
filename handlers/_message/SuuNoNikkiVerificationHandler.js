@@ -1,7 +1,7 @@
 const SERVER_ID = '647887622395396117';
 const VERIFICATION_CHANNEL_ID = '648209801536471070';
 
-const Worker = async (client, message) => {
+const Handler = async (client, message) => {
   if (!message.guild) {
     return;
   }
@@ -18,12 +18,12 @@ const Worker = async (client, message) => {
     return;
   }
 
-  const guild = client.guilds.get(SERVER_ID);
+  const guild = client.guilds.cache.get(SERVER_ID);
 
-  const role = guild.roles.find(r => r.name === 'member');
-  const author = guild.members.find(m => m.id === message.author.id);
+  const role = guild.roles.cache.find(r => r.name === 'member');
+  const author = guild.members.cache.find(m => m.id === message.author.id);
   author.addRole(role);
   await message.delete();
 };
 
-module.exports = Worker;
+module.exports = Handler;
